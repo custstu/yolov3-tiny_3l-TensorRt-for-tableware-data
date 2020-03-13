@@ -1,0 +1,13 @@
+plate front
+plate back
+bowl front
+bowl back
+glass cup side
+glass cup back
+glass cup front
+teacup side
+teacup back
+teacup front
+cup side
+cup back
+cup front
