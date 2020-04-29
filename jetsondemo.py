@@ -219,7 +219,7 @@ def read_queue(queue):
         #t2 = time.time()
         #t_inf = t2 - t1
         #print("time consumption:",t_inf)
-        print(bboxes, scores, classes)
+        print(boxes, scores, classes)
         images.clear()
         if (scores[2] == 0):
             ser.write("h".encode("utf-8"))
