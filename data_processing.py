@@ -59,7 +59,7 @@ class PreprocessYOLO(object):
         """
 
         #image_raw = Image.open(input_image_path)
-        image_raw = Image.fromarray(input_image_path)
+        image_raw = Image.fromarray(cv2.cvtColor(input_image_path, cv2.COLOR_BGR2RGB))
         # Expecting yolo_input_resolution in (height, width) format, adjusting to PIL
         # convention (width, height) in PIL:
         new_resolution = (
