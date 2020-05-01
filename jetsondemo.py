@@ -221,7 +221,7 @@ def read_queue(queue):
         #print("time consumption:",t_inf)
         print(boxes, scores, classes)
         images.clear()
-        if  np.all(scores == 0):
+        if np.all(scores == 0):
             ser.write("h".encode("utf-8"))
             print('exception.')
             continue
