@@ -224,8 +224,9 @@ def read_queue(queue):
         if np.all(scores == 0):
             ser.write("h".encode("utf-8"))
             print('exception.')
-            continue
-        label = classes[2]
+            continue	
+        index = np.nonzero(classes)
+        label = classes[index[0]]
         cv2.imwrite('tmp/'+str(num)+'.jpg', frame)
         if label == 0:
             ser.write("c".encode("utf-8"))
